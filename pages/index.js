@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import ClientSideRender from '../components/ClientSideRender';
+import ServerSideRender from '../components/ServerSideRender';
 import styles from '../styles/Home.module.css';
 
 // 'getServerSideProps' must be named exactly and exported in order to provide props to Component
@@ -29,6 +30,7 @@ export default function Home({todos}) {
 
           <ClientSideRender></ClientSideRender>
 
+          <ServerSideRender todos={todos}></ServerSideRender>
         </section>
       </main>
     </div>
